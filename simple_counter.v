@@ -1,9 +1,9 @@
-// Here we will learn to write a verilog HDL to design a 32 bit counter
+// Here we will learn to write a verilog HDL to design a 64 bit counter
 module counter(clk,reset,up_down,load,data,count);
   //define input and output ports
   input clk,reset,load,up_down;
-  input [31:0] data;
-  output reg [31:0] count;
+  input [63:0] data;
+  output reg [63:0] count;
   //always block will be executed at each and every positive edge of the clock
   always@(posedge clk) 
   begin
